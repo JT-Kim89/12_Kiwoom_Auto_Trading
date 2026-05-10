@@ -1,0 +1,10 @@
+[Unit]
+Description=Kiwoom Samsung daily buy
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/kiwoom-samsung-buy
+EnvironmentFile=%h/kiwoom-samsung-buy/.env
+ExecStart=/usr/bin/python3 %h/kiwoom-samsung-buy/samsung_daily_buy.py --due
