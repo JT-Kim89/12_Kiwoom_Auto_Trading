@@ -1,0 +1,5 @@
+.env
+orders.jsonl
+.kiwoom_samsung_state.json
+__pycache__/
+*.pyc
